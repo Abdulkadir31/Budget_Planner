@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Oep_Database</string>
+
+    <string-array name="categories">
+        <item>Shopping</item>
+        <item>Grocery</item>
+        <item>Travelling</item>
+        <item>Partying</item>
+        <item>Others</item>
+    </string-array>
+    <string name="category">Select Category</string>
+
+</resources>
+

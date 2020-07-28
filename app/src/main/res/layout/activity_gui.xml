@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GUI"
+    android:background="@drawable/animation_list"
+    android:id="@+id/gui">
+
+    <Button
+        android:id="@+id/spend"
+        style="@android:style/ButtonBar"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="191dp"
+        android:background="@drawable/expensebutton"
+        android:onClick="spendclick"
+        android:text="Add Expense"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:textSize="18sp"
+        android:drawableLeft="@drawable/budget"/>
+
+    <Button
+        android:id="@+id/expense"
+        style="@android:style/ButtonBar"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="274dp"
+        android:background="@drawable/expensebutton"
+        android:drawableLeft="@drawable/search"
+        android:onClick="expenseclick"
+        android:text="View expense"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="246dp"
+        android:layout_marginBottom="114dp"
+        android:background="@drawable/expensebutton"
+        android:onClick="logoutofapp"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/piechart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginBottom="111dp"
+        android:background="@drawable/expensebutton"
+        android:onClick="graphClick"
+        android:text="Show Graph"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200sp"
+        android:layout_height="150sp"
+        android:layout_alignEnd="@+id/piechart"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="-122dp"
+        app:srcCompat="@drawable/icon" />
+
+
+</RelativeLayout>

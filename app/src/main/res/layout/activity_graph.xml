@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Graph"
+    android:id="@+id/graphview"
+    android:background="@drawable/animation_list">
+
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_marginTop="110dp"
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="400sp" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:id="@+id/piechart1"></com.github.mikephil.charting.charts.PieChart>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="68dp"
+        android:onClick="showbargraph"
+        android:text="Show Bargraph"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:background="@drawable/expensebutton"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="66dp"
+        android:onClick="showpiechart"
+        android:text="Show PieChart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:background="@drawable/expensebutton"/>
+
+    <TextView
+        android:id="@+id/sd1"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="17dp"
+        android:text="Select Start Date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/sd2"
+        android:layout_width="wrap_content"
+        android:layout_height="35sp"
+        android:layout_alignTop="@+id/sd1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="38dp"
+        android:text="Select End Date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+</RelativeLayout>
